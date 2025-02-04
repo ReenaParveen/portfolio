@@ -21,7 +21,7 @@ const Footer = () => {
          </div>
          <hr />
          <div className="footer-bottom">
-           <p className="footer-bottom-left"> 2025 Reena Parveen. All rights ...</p>
+           <p className="footer-bottom-left"> &copy; 2025 Reena Parveen. All rights ...</p>
            <div className="footer-bottom-right">
             <p>Term of Services</p>
             <p>Privacy Policy</p>
