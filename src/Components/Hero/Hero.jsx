@@ -1,22 +1,21 @@
-import React from "react"
-import './Hero.css'
-import AnchorLink from "react-anchor-link-smooth-scroll";
+// Hero.jsx
+import React from "react";
+import { Box, Typography } from "@mui/material";
+import './Hero.css';
 
 const Hero = () => {
     return (
-        <div id='home' className='hero'>
-            <h1>
-                { <span>I'm Reena Shareef,</span>}
+        <Box id="home" className="hero" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, pt: 15 }}>
+            <Typography variant="h2" align="center" sx={{ fontSize: '90px', fontWeight: 600 }}>
+                <span>I'm Reena Shareef,</span>
                 Software Developer Intern at Infomatics
-            </h1>
+            </Typography>
+            <Typography variant="body1" align="center" sx={{ width: '50%', fontSize: '24px', lineHeight: '40px' }}>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, in vero minus sequi fugit nihil.
+            </Typography>
+            {/* More content */}
+        </Box>
+    );
+};
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero repellat possimus quisquam. Sapiente, in vero minus sequi fugit nihil corporis voluptates quas atque unde? Aperiam sed reprehenderit error incidunt nisi nobis, corporis perferendis laborum assumenda rem, distinctio nesciunt ab? Nisi.</p>
-            <div className="hero-action">
-                <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>
-                <div className="hero-resume">My Resume</div>
-            </div>
-        </div>
-    )
-}
-
-export default Hero
+export default Hero;

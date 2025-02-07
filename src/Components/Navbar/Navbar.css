@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     /* margin: 20px 170px; */
-    position: -webkit-sticky;  
+    /* position: -webkit-sticky;   */
     position: fixed;
     top: 0;  
     z-index: 1000;  
@@ -74,7 +74,7 @@
 
 @media(max-width:768px){
     .navbar{
-        margin: 20px 50px;
+        margin: 20px 0px;
     }
     .nav-connect{
         display: none;
@@ -106,8 +106,10 @@
     }
     .nav-menu li{
         font-size: 30px;
-        padding: 100px;
+        padding: 10px;
         flex-direction: row;
         gap: 20px;
     }
-}
+} 
+
+  
